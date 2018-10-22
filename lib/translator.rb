@@ -15,6 +15,8 @@ def load_library(filename)
 end
 
 
+
+
 def get_japanese_emoticon(filepath, emoticon)
   temp = load_library(filepath)["get_emoticon"][emoticon]
   if temp == nil
