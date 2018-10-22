@@ -1,10 +1,8 @@
-# require modules here
 require "yaml"
 require "pry"
 
 
 def load_library(filename)
-  # code goes here
   meaning = {}
   emoticon = {}
 
@@ -21,7 +19,6 @@ end
 
 
 def get_japanese_emoticon(filepath, emoticon)
-  # code goes here
   temp = load_library(filepath)["get_emoticon"][emoticon]
   if temp == nil
     return "Sorry, that emoticon was not found"
@@ -31,7 +28,6 @@ def get_japanese_emoticon(filepath, emoticon)
 end
 
 def get_english_meaning(filepath, emoticon)
-  # code goes here
   temp = load_library(filepath)["get_meaning"][emoticon]
   if temp == nil
     return "Sorry, that emoticon was not found"
